@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.calculator {
+    border: 1px solid black;
+    width: 30%;
+    height: 38rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    background-color: #757575;
+}
+
+.screen {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin: auto;
+    height: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.previousOperand {
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+.currentOperand {
+    height: 5rem;
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 20%;
+    margin: 1rem;
+    height: 3rem;
+    background-color: #B1870B;
+    border-radius: 1rem;
+    border: #B1870B;
+    font-size: larger;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+button:hover {
+    transform: scale(1.15);
+    background-color: #5d4506;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+    background-color: black;
+    color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+@media (max-width:900px) and (min-width:360px) {
+    .calculator {
+        width: 80%;
+        height: 100vh;
+    }
+    button {
+        margin: 0.5rem;
+    }
+    .currentOperand {
+        height: 5rem;
+        display: flex;
+        justify-content: right;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+    .previousOperand {
+        height: 4rem;
+        display: flex;
+        justify-content: end;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:1200px) and (min-width:900px) {
+    .calculator {
+        width: 60%;
+        height: 100vh;
+    }
+    button {
+        margin: 0.4rem;
+    }
+}
