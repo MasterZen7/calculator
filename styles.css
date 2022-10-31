@@ -39,7 +39,7 @@ h1 {
 .currentOperand {
     height: 5rem;
     display: flex;
-    justify-content: right;
+    justify-content: end;
     margin-right: 2rem;
     font-size: 3rem;
 }
@@ -91,15 +91,15 @@ a:visited {
     button {
         margin: 0.5rem;
     }
-    .currentOperand {
-        height: 5rem;
+    .previousOperand {
+        height: 4rem;
         display: flex;
-        justify-content: right;
+        justify-content: end;
         margin-right: 2rem;
         font-size: 1.5rem;
     }
-    .previousOperand {
-        height: 4rem;
+    .currentOperand {
+        height: 5rem;
         display: flex;
         justify-content: end;
         margin-right: 2rem;
